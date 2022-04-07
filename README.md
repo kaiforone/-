@@ -29,11 +29,12 @@
 + 类创建需传入的参数：
   - symbol，交易股票的代码
   - data， 该股票的历史行情数据（DataFrame，其字段名需满足一定规范）
-  - trade_amount， 交易数量
   - trade_strategy， 交易策略（boll、mean ...）
+  - trade_amount， 交易数量
   - capital, 初始本金
   - start_date， 开始日期
   - end_date， 截止日期
+  - max_volatility 涨跌限制（默认值为None，意味着无涨跌限制。应该传入对应股票单日的最大涨跌幅，比如A股主板，应该传入数字10）
 
 + 方法：
   - self.main ——  调用此方法，会根据选定的策略更新账户所有相关数据
