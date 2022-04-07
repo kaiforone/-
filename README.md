@@ -30,10 +30,10 @@
   - symbol，交易股票的代码
   - data， 该股票的历史行情数据（DataFrame，其字段名需满足一定规范）
   - trade_strategy， 交易策略（boll、mean ...）
-  - trade_amount， 交易数量
-  - capital, 初始本金
-  - start_date， 开始日期
-  - end_date， 截止日期
+  - trade_amount， 交易数量（默认值为100）
+  - capital, 初始本金（默认值为100000）
+  - start_date， 开始日期（默认值1900-01-01）
+  - end_date， 截止日期（默认值2099-01-01，起始、截止日期的设置意味着默认时间范围不受限制）
   - max_volatility 涨跌限制（默认值为None，意味着无涨跌限制。应该传入对应股票单日的最大涨跌幅，比如A股主板，应该传入数字10）
 
 + 方法：
